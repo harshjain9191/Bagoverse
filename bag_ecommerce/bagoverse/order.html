@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="MAIN_PAGE.CSS">
+</head>
+
+<body class="background" style="background-size: cover;">
+<!--header section with nav-->
+    <header>
+        <div class="leftdiv">
+
+            <img src="BAGOVERSE2.png">
+
+        </div>
+        <div class="middiv">
+
+            <ul class="navlist">
+                <li><a class="navlinks" href="mainpage.html">HOME</a></li>
+                <li><a class="navlinks" href="catagories.html">CATAGORIES</a></li>
+                <li class="dropdown"><a class="dropbtn" href="products.html">PRODUCTS</a>
+                    <div class="dropdown-content">
+                        <a href="#lad_bags">LADIES BAGS</a>
+                        <a href="#travel_bags">TRAVELBAGS</a>
+                        <a href="#school_bags">SCHOOL BAGS</a>
+                    </div>
+                </li>
+                <li><a class="navlinks" href="news.html">NEWS</a></li>
+                <li><a class="navlinks" href="about.html">ABOUT</a></li>
+            </ul>
+
+        </div>
+        <div class="rightdiv">
+
+            <span class="login_text">
+                <a class="login" href="login.html">Login </a><span class="login" style="font-size: 20px;">/</span>
+                <a class="login" href="register.html">Register </a>
+            </span>
+            <a class="anchor_butt" href="user_account.html"><i class="material-icons">account_circle</i></a>
+            <a class="anchor_butt" href="cart.html"><i class="fas fa-cart-arrow-down" id="cart_up"></i></a>
+
+
+            <input type="seach" id="search" name="search_bar" novalidate autocomplete="on">
+            <button onclick="search_item()" id="search_butt"><i class="fas fa-search"></i></button>
+
+        </div>
+        
+    </header>
+<!--product page-->
+    <div class="prod">
+        <div class="prod_img">
+            <img id="img_prod" src="slider12.jpg">
+        </div>
+        <div class="prod_detail">
+            <div class="prod_name">
+                <h2 class="prod_name">PRODUCT_NAME</h2>
+            </div>
+            <div class="prod_dis">
+                <p id="prod_dis">product product product product product product product product product product product
+                    product product product product product product product product product product product product
+                    product product product product product </p><br>
+                <p id="prod_dis">product product product product product product product product product product product
+                    product product product product product product product product product product product product
+                    product product product product product </p><br><br>
+                <i id="span_txt">RS <span id="price">500</span>&#8377</i>
+            </div>
+            <div class="cart_butt">
+                <input type="number" id="quantity" placeholder="1" min="1">
+                <button onclick="addToCart(0)" id="addtocartbutt">ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
