@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="checkout.css">
+    <script>
+        function show() {
+            var x = document.getElementById('qr');
+
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function show2() {
+            var x = document.getElementById('bank');
+
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bodym">
+
+    <!--CHKOUT PAGE..........-->
+
+    <div class="checkout1">
+
+        <div class="check-form">
+            <h1 id="h1">BILLING DETAILS</h1>
+            <ul id="#ul">
+                <form class="form-left" method="POST">
+
+                    <li> <label id="label"for="citybox">CITY: </label><br>
+                        <select id="citybox" size="1">
+                            <option>BHOPAL</option>
+                            <option>SATNA</option>
+                            <option>JABALPUR</option>
+                            <option>GUNA</option>
+                            <option>GWALIOR</option>
+                            <option>BINA</option>
+                            <option>UJJAIN</option>
+                            <option>INDORE</option>
+                        </select><br></li>
+
+                    <li><label id="label"for="fname">FIRST NAME:</label><br>
+                        <input class="input"t type="text" id="fname"><br></li>
+
+                    <li><label id="label"for="lname">LAST NAME:</label><br>
+                        <input class="input"t type="text" id="lname"><br></li>
+
+                    <li> <label id="label"for="address">ADDRESS:</label><br>
+                        <input class="input"t type="text" id="address"><br>
+                        <input class="input"t type="text" id="address"><br></li>
+
+                    <li>
+                        <label id="label"for="code">PINCODE:</label><br>
+                        <input class="input"t type="text" id="code"><br>
+                    </li>
+                    <li>
+                        <label id="label"for="phone">CONTACT:</label><br>
+                        <input class="input"t type="text" id="phone">
+                    </li>
+                    <input type="radio" id="radio1"><span id="rdbutt">CASH ON DELIVERY</span></input><br><br>
+                    <input type="radio" id="radio2"><span id="rdbutt">UPI PAYMENT</span> </input><br><br>
+                    <input type="radio" id="radio3"><span id="rdbutt">BANK DEPOSIT</span></input>
+                    <input type="submit" class="paybtn" value="PROCEED TO PAY">
+                </form>
+            </ul>
+        </div>
+
+        <div class="lastcon">
+            <label id="label" for="ordernote">WRITE YOUR NOTES FOR DELIVERY:</label><br>
+            <textarea id="ordernote" cols="70" rows="5"></textarea>
+        </div>
+
+    </div>
+
+    <div class="checkout2">
+
+        <h2 id="c">YOUR ORDER</h2>
+        <div class="order2">
+            <table id="table1">
+                <tr>
+                    <th id="last">Product</th>
+                    <th id="last">Rate</th>
+                    <th id="last">Quantity</th>
+                    <th id="last">Total</th>
+                </tr>
+                <tr>
+                    <td>bag1</td>
+                    <td>500.00&#8377</td>
+                    <td>1</td>
+                    <td>500&#8377</td>
+                </tr>
+                <tr>
+                    <td>bag1</td>
+                    <td>500.00&#8377</td>
+                    <td>1</td>
+                    <td>500&#8377</td>
+                </tr>
+                <tr>
+                    <td>bag1</td>
+                    <td>500.00&#8377</td>
+                    <td>1</td>
+                    <td>500&#8377</td>
+                </tr>
+                <tr>
+                    <th colspan="3" id="lastm">PAYABLE TOTAL:</th>
+                    <td id="lastm">1500&#8377</td>
+                </tr>
+                <tr>
+                    <th colspan="3" id="lastm">DISCOUNT:</th>
+                    <td id="lastm">-10%</td>
+                </tr>
+                <tr>
+                    <th colspan="3" id="lastm">INVOICE TOTAL:</th>
+                    <td id="lastm" bgcolor="green">1350&#8377</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="payment2">
+            <div class="butt">
+                <h4>SEE DETAILS:</h4>
+                <button id="pbutt2" onclick="show()">SCAN AND PAY</button>
+                <button id="pbutt3" onclick="show2()">BANK DEPOSIT</button>
+                <div id="qr">
+                    <img src="qrcode.png">
+                    <label id="label" for="qr_text">TRANSACTION ID:</label>
+                    <input class="input"t type="text" id="qr_text">
+                </div>
+                <div id="bank">
+                    <h4>BANK ACCOUNT NUMBER:</h4>
+                    <H4>02846662553377728</H4>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

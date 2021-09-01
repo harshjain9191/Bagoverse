@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="MAIN_PAGE.CSS">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+
+            <header>
+                <div class="leftdiv">
+
+                    <img src="BAGOVERSE2.png">
+
+                </div>
+                <div class="middiv">
+
+                    <ul class="navlist">
+                        <li><a class="navlinks" href="mainpage.html">HOME</a></li>
+                        <li><a class="navlinks" href="catagories.html">CATAGORIES</a></li>
+                        <li class="dropdown"><a class="dropbtn" href="products.html">PRODUCTS</a>
+                            <div class="dropdown-content">
+                                <a href="#lad_bags">LADIES BAGS</a>
+                                <a href="#travel_bags">TRAVELBAGS</a>
+                                <a href="#school_bags">SCHOOL BAGS</a>
+                            </div>
+                        </li>
+                        <li><a class="navlinks" href="news.html">NEWS</a></li>
+                        <li><a class="navlinks" href="about.html">ABOUT</a></li>
+                    </ul>
+
+                </div>
+                <div class="rightdiv">
+
+                    <span class="login_text">
+                        <a class="login" href="login.html">Login </a><span class="login"
+                            style="font-size: 20px;">/</span>
+                        <a class="login" href="register.html">Register </a>
+                    </span>
+                    <a class="anchor_butt" href="user_account.html"><i class="material-icons">account_circle</i></a>
+                    <a class="anchor_butt" href="cart.html"><i class="fas fa-cart-arrow-down" id="cart_up"></i></a>
+
+
+                    <input type="seach" id="search" name="search_bar" novalidate autocomplete="on">
+                    <button onclick="search_item()" id="search_butt"><i class="fas fa-search"></i></button>
+
+                </div>
+                <iframe src="slider2.html" id="slider_iframe"></iframe>
+            </header>
+
+        </div>
+
+
+
+        <div class="sidebar">
+            <form action="" novalidate autocomplete="on" method="GET">
+                <!--product catagories-->
+                <h3>PRODUCTS CATAGORIES</h3><br><br>
+                <label for="catagories">CHOOSE:</label><br>
+                <ul class="sidebar" style="list-style-type: none;">
+                    <li><input type="radio" name="catagories" id="catagories">Mens</li>
+                    <li><input type="radio" name="catagories" id="catagories">Womens</li>
+                    <li> <input type="radio" name="catagories" id="catagories">Kids</li>
+                    <li> <input type="radio" name="catagories" id="catagories">Teens</li>
+                </ul><br>
+                <!--product list-->
+                <label for="list">PRODUCT LIST: </label><br>
+                <ul class="sidebar" style="list-style-type: none;">
+                    <li><input type="checkbox" name="ladbag" id="list">Ladies bag </li>
+                    <li><input type="checkbox" name="mensbag" id="list">Mens bag </li>
+                    <li><input type="checkbox" name="schoolbag" id="list">School bag </li>
+                    <li><input type="checkbox" name="travelbag" id="list">Travel bag </li>
+                    <li><input type="checkbox" name="lapbag" id="list">Laptop bag </li>
+                </ul><br>
+                <!--price range-->
+                <label for="price">PRICE RANGE:</label><br>
+
+                <input type="range" id="price" name="price" class="price" placeholder="500" min="100" max="1000"
+                    step="10">
+                <p>PRICE: <span id="demo"></span>&#8377</p>
+                <script>
+                    var slider = document.getElementById("price");
+                    var output = document.getElementById("demo");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function () {
+                        output.innerHTML = this.value;
+                    }
+                </script>
+
+            </form>
+        </div>
+
+
+
+        <div class="page">
+            <div class="inner_container">
+                <a href="order.html" id="item_anchor"><div class="item1">item1</div></a>
+                <a href="order.html" id="item_anchor"><div class="item2">item2</div></a>
+                <a href="order.html" id="item_anchor"><div class="item3">item3</div></a>
+                <a href="order.html" id="item_anchor"><div class="item4">item4</div></a>
+                <a href="order.html" id="item_anchor"><div class="item5">item5</div></a>
+                <a href="order.html" id="item_anchor"><div class="item6">item6</div></a>
+                <a href="order.html" id="item_anchor"><div class="item7">item7</div></a>
+                <a href="order.html" id="item_anchor"><div class="item8">item8</div></a>
+                <a href="order.html" id="item_anchor"><div class="item9">item9</div></a>
+            </div>
+
+        </div>
+        <div class="foot">
+            <div class="footer_links">
+                <br>
+                <br>
+                <h5 style="font-size: 25px;font-family: 'Courier New', Courier, monospace;float: none;">QUICK LINKS:
+                </h5>
+                <br>
+
+                <ul class="quick_links">
+
+                    <li><a class="quick_links" href="about.html">About Us</a></li>
+                    <li><a class="quick_links" href="contact.html">Contact Us</a></li>
+                    <li><a class="quick_links" href="userpolicies.html">User Policies</a></li>
+                    <li><a class="quick_links" href="feedback.html">Feedback</a></li>
+                    <li><a class="quick_links" href="FAQ.html">Faqs</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer_data">
+                <br><br>
+                <h2><a class="anchor_butt" href="#top"><i class="fas fa-arrow-up"></i></a></h2><br>
+                <h2><a class="anchor_butt" href="cart.html"><i class="fas fa-cart-arrow-down"></i></a></h2><br>
+                <h2><a class="anchor_butt" href="chat.html"><i class="fas fa-comment"></i></a></h2><br>
+
+
+
+                <h3 class="head2">STAY UPDATED:</h3>
+                <br>
+                <form action="">
+                    <input type="email" id="inp1" name="user_email">
+                    <input type="submit" id="butt1" value="JOIN US">
+                </form>
+                <p>VISIT US: adress adress adress adress</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

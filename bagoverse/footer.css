@@ -1,0 +1,85 @@
+.footer-main {
+    float: left;
+    background: none;
+}
+.row-1, .row-2 {
+    float: left;
+    margin: 80px 150px;
+}
+.col-1 {
+    float: left;
+    width: 25%;
+}
+.col-2 {
+    float: left;
+    width: 50%;
+    padding: 0px 40px;
+}
+.col-3 {
+    float: left;
+    width: 20%;
+}
+#cc1, #cc2, #cc3 {
+    float: left;
+    margin: 10px;
+    list-style: none;
+}
+[id^="cc"] li {
+    padding: 10px 10px;
+    color: whitesmoke;
+    font: bold 15px lucida sans;
+}
+#con-list li {
+    padding: 10px 10px;
+    color: whitesmoke;
+    font: bold 15px lucida sans;
+    list-style: none;
+}
+#con-list i {
+    margin: 0px 10px 0px 0px;
+    background: none;
+    color: rgb(5, 71, 46);
+}
+
+#links, #about, #contact-inf {
+    font: bolder 22px sans-serif;
+}
+#about, #contact-inf {
+    padding: 0px 0px 20px 0px;
+}
+[id^="foot"] {
+    color: whitesmoke;
+    font: bold 20px lucida sans;
+    padding: 0px 0px 20px 0px;
+}
+.col-1 > label {
+    font: bolder 22px sans-serif;
+    color: black;
+    margin: 10px 0px;
+}
+.subs-butt {
+    background: whitesmoke;
+    width: 263px;
+    border: 1px solid rgb(114, 79, 2);
+    border-radius: 20px;
+}
+#subs-text {
+    padding: 10px;
+    border: none;
+    background: none;
+}
+#subs-butt {
+    padding: 10px;
+    border: none;
+    background: rgb(201, 31, 31);
+    border-radius: 18px;
+    font: bold 13px cursive;
+    color: white;
+    margin: 2px 0px;
+}
+#foot-last {
+    padding: 0px 200px;
+}
+#none {
+    text-decoration: none;
+}

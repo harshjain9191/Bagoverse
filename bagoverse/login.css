@@ -1,0 +1,57 @@
+body {
+    background-image: url(pexels-photo-175538.jpg);
+    background-size: 100%;
+}
+
+.login {
+    float: left;
+    margin: 100px 200px;
+}
+h1 {
+    font: bolder 50px sans-serif;
+    color: #066d6d;
+    text-decoration: underline 5px rgb(3, 160, 160);
+}
+label {
+    font: 500 30px Eras ITC;
+    color: #09572c;
+    margin: 20px;
+}
+input{
+    border: none;
+    background: none;
+    color: darkblue;
+    font-size: 20px;
+    width: auto;
+    border-bottom: 3px solid #4caf50;
+    padding: 10px;
+}
+h2 {
+    font: bolder 30px courier;
+    margin: 20px 0px;
+    margin-bottom: 0px;
+    color: rgb(3, 74, 77);
+}
+#butt1
+{
+    margin-top: 20px;
+    padding: 20px;
+    background: seagreen;
+    border: none;
+    font: normal 20px lucida;
+    color: white;
+    width: 100%;
+    box-shadow: 20px 20px 10px grey;
+}
+h3 {
+    font: bolder 20px lucida;
+    color: rgb(104, 7, 7);
+    background-color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
